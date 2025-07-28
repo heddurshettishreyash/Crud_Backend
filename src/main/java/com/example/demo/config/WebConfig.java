@@ -11,7 +11,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
 
         registry.addMapping("/**")
-                .allowedOrigins("https://crud-frontend-1-rvb7.onrender.com")
+                //https://crud-frontend-1-rvb7.onrender.com
+                .allowedOrigins("*")
                 .allowedHeaders("*")
                 .allowCredentials(true)
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
