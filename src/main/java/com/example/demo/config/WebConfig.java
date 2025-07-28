@@ -14,7 +14,7 @@ public class WebConfig implements WebMvcConfigurer {
                 //https://crud-frontend-1-rvb7.onrender.com
                 .allowedOrigins("*")
                 .allowedHeaders("*")
-                .allowCredentials(true)
+                //.allowCredentials(true)
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
     }
 }
