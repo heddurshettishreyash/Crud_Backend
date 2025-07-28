@@ -12,7 +12,6 @@ import jakarta.validation.constraints.Size;
 
 public class Login {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
 
