@@ -9,15 +9,16 @@ import jakarta.validation.constraints.Size;
 
 
 @Entity
-
 public class Login {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     @NotNull
-
     private String username;
-    @Size(min = 4)
 
+    @Size(min = 4)
     private String password;
 
     public Login() {
